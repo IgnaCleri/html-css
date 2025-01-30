@@ -1,0 +1,44 @@
+div {
+    padding: 20px;
+}
+
+h1::first-letter{
+    color: red;
+    font-size: 50px;
+    letter-spacing: -8px;
+}
+
+div::first-line{
+    color: blue;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+h1::selection{
+    background-color: yellow;
+    color: black;
+}
+
+input::placeholder{
+    color: red;
+    background-color: yellow;
+    padding: 0px 20px;
+}
+
+li::marker{
+    color: red;
+    font-size: 20px;
+}
+
+li::before{
+    content: "👉";
+    color: red;
+    font-size: 20px;
+}
+
+li::after{
+    content: "👈";
+    color: red;
+    font-size: 20px;
+}
+

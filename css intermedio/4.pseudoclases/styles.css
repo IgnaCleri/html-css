@@ -1,0 +1,59 @@
+/* h1{
+    color: #00f;
+}
+
+h1:hover{
+    color: #f00;
+}
+
+h1:active{
+    color: #0f0;
+}
+
+.lista li:not(.excluir){
+    color: #f00;
+}
+
+div:empty{
+    background-color: #0f0;
+    padding: 30px;
+}
+
+input[type="checkbox"]{
+    margin: 50px;
+}
+
+input[type="checkbox"]:checked{
+    margin: 0;
+}
+
+a:link{
+    color: #f00;
+}
+
+a:visited{
+    color: #0f0;
+}
+
+input:valid{
+    color: #0f0;
+}
+input:invalid{
+    color: #f00;
+} */
+
+section :is(.elemento1, .elemento2, .elemento3){
+    color: #f00;
+}
+
+section :where(.elemento1, .elemento2, .elemento3){
+    color: #0f0;
+}
+
+section :has(.elemento1){
+    background-color: #00f;
+}
+
+ul:has(+div){
+    background-color: #000;
+}

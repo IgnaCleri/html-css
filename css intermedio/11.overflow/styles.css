@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.box{
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    color: red;
+    position: relative;
+    left: 0;
+    border: 2px solid #0009;
+    overflow: auto;
+}
+
+.box1{
+    overflow: hidden;
+}
+.box2{
+    overflow: auto;
+}
+.box3{
+    overflow: scroll;
+}
+.box4{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.box5{
+    overflow-x: hidden;
+    overflow-y: auto;
+}

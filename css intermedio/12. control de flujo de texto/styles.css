@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bbb;
+}
+
+.box{
+    width: 240px;
+    height: 240px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    padding: 50px;
+}
+
+.box1{
+    white-space: nowrap;
+}
+
+.box2{
+    white-space: pre;
+}
+
+.box3{
+    white-space: pre-wrap;
+}
+
+.box4{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.box5{
+    text-wrap: balance;
+}
+
+.box6{
+    text-wrap: pretty;
+}

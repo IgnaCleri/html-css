@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img{
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    border: 2px solid #000;
+    margin-top: 50px;
+}
+
+.img1{
+    object-fit: fill;
+}
+.img2{
+    object-fit: contain;
+}
+.img3{
+    object-fit: cover;
+    object-position: top;
+}
+.img4{
+    object-fit: cover;
+    object-position: 50px 50px;
+}
+.img5{
+    object-fit: none;
+}
+.img6{
+    object-fit: scale-down;
+}
