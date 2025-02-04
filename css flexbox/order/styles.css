@@ -31,8 +31,14 @@ div, body{
 
 .container-item:nth-child(1){
     background-color: #f00;
+    order: 1;
+}
+
+.container-item:nth-child(2){
+    order: 2;
 }
 
 .container-item:last-child{
     background-color: #400;
+    order: 3;
 }

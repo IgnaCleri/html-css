@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div,body{
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+}
+
+.bloque{
+    min-width: 150px;
+    background-color: #6af;
+    margin: auto;
+    display: inline-block;
+    flex: 1;
+    font-size: 12px;
+    padding: 10px;
+    margin: 4px;
+}
