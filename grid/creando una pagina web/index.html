@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -15,13 +18,13 @@
         </div>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#">About</a></li>
-                <li class="header__nav-item"><a href="#">Portfolio</a></li>
-                <li class="header__nav-item"><a href="#">Contact</a></li>
+                <li class="header__nav-item"><a href="#profile">About</a></li>
+                <li class="header__nav-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="header__nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="profile">
+    <main class="profile" id="profile">
         <div class="profile__wrapper">
             <div class="profile__img-container">
                 <img src="dalto.jpg" class="profile__img" alt="Lucas Dalto">
@@ -73,28 +76,59 @@
             </div>
         </div>
     </main>
-    <section class="portfolio">
-        <h2>PORTFOLIO SECTION</h2>
-        <div class="portfolio__proyect-container">
-            <div class="portfolio__proyect">
-                <h2 class="portfolio__proyect-name">PROJECT</h2>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">PORTFOLIO SECTION</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROJECT</h2>
             </div>
-            <div class="portfolio__proyect">
-                <h2 class="portfolio__proyect-name">PROJECT</h2>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROJECT</h2>
             </div>
-            <div class="portfolio__proyect">
-                <h2 class="portfolio__proyect-name">PROJECT</h2>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROJECT</h2>
             </div>
-            <div class="portfolio__proyect">
-                <h2 class="portfolio__proyect-name">PROJECT</h2>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROJECT</h2>
             </div>
-            <div class="portfolio__proyect">
-                <h2 class="portfolio__proyect-name">PROJECT</h2>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROJECT</h2>
             </div>
-            <div class="portfolio__proyect">
-                <h2 class="portfolio__proyect-name">PROJECT</h2>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">PROJECT</h2>
             </div>
         </div>
     </section>
+    <section class="form" id="contact">
+        <h2 class="form__title">CONTACT</h2>
+        <form class="form__form">
+            <div class="form__input-container">
+                <label>Nombre
+                    <input type="text" placeholder="John" 
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Apellido
+                    <input type="text" placeholder="Doe" 
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Email
+                    <input type="mail" placeholder="mail@example.com" 
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label>Mensaje
+                    <input type="text" placeholder="Place your message here..." 
+                </label>
+            </div>
+            <div class="form__input-container">
+                <input type="submit">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <strong>ADA 13 - Copyright </strong>
+    </footer>
 </body>
 </html>
