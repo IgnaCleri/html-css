@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    background-color: #222;
+    height: 200vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* .crecedor{
+    height: 200vh;
+    overflow: hidden;
+} */
+
+.container{
+    scroll-timeline: --containerScroll block;
+    overflow-y: scroll;
+    height: 500vh;
+}
+
+.box{
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+    position: fixed;
+    width: 100%;
+    animation-name: borde-color;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: --containerScroll();
+    z-index: 1; /* Asegúrate de que el elemento esté en el frente */
+}
+
+.barra{
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    animation-name: llenar-barra;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: --containerScroll();
+    border: none;
+    z-index: 2; /* Asegúrate de que el elemento esté en el frente */
+}
+
+@keyframes llenar-barra{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+        background-color: #f33;
+    }
+}
+
+@keyframes borde-color{
+    0%{
+        border-color: #48e;
+    }
+    100%{
+        border-color: #f33;
+    }
+}
