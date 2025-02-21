@@ -190,10 +190,21 @@ h1{
         padding: 20px;
         background-color: transparent;
         height: 90vh;
+        margin: auto;
     }
 
     .profile__data-container{
         background-color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 0 25px 25px 0 ;
+        box-shadow: 0 0 9px #0002;
+    }
+
+    h1{
+        padding-top: 50px;
+        font-size: 2rem;
+        text-wrap: balance;
     }
 
     .profile__data{
@@ -202,6 +213,7 @@ h1{
 
     .profile__img-container{
         max-height:initial;
+        border-radius: 25px 0 0 25px;
     }
 
     .profile__img{
@@ -211,4 +223,40 @@ h1{
     }
 }
 
-/* 17:33:00 */
+
+/* --- PROFILE ENDS --- */
+
+/* --- PORTFOLIO SECTION --- */
+
+.portfolio{
+    background-color: #18233f;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portfolio__proyect-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 2px;
+    padding: 12px;
+    min-height: 90vh;
+}
+
+.portfolio__proyect{
+    background-image: linear-gradient(#000, #0009, #000), url(dalto.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+
+.portfolio__proyect:hover{
+    opacity: 0.74;
+    outline: 2px solid #fff;
+}
