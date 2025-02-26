@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+    --tamano-principal: 12px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    display: grid;
+    place-content: center;
+    font-size: 30px;
+    margin: 120px auto;
+    color: white;
+    padding: 0 40px;
+    font-size: clamp(--tamano-principal, --tamano-principal, --tamano-principal);
+    border: 6px  solid #000;
+}
+
+
+.box:first-child{
+    background-color: var(--color-principal);
+}
+
+.box:nth-child(2){
+    color: var(--color-principal);
+    border: 6px solid var(--color-principal);
+}
+
+.box p{
+    --color-principal: #f00;
+    color:var(--color-principal)
+}
+
+h1{
+    font-size: --tamano-principal;
+    margin-bottom: 0;
+}
+
+body > p{
+    font-size: --tamano-principal;
+    color: var(--color-principal);
+}
+
+@property --color-principal{
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #48e;
+}
