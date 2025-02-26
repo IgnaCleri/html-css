@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box{
+    font-size: 30px;
+    padding: 0 40px;
+}
+
+p:first-letter{
+    initial-letter: 3 2;
+    padding: 2px;
+    padding-left: 0;
+    padding-bottom: 0;
+    color: #f00;
+    margin-bottom: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
