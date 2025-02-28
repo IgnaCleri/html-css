@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <form>
+            <input type="checkbox" id="open-menu">
+            <label for="open-menu" class="material-symbols-outlined close">close</label>
+            <label for="open-menu" class="material-symbols-outlined open">double_arrow</label>
+        </form>
+        <picture>
+            <source srcset="img/logo-small.png" media="(max-width:56.25rem)">
+            <img src="img/logo.png" alt="logo">
+        </picture>
+        <nav class="sidebar__nav">
+            <ul>
+                <li class="sidebar__nav-item">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <a href="#">notifications</a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <details>
+                        <summary>                           <span       class="material-symbols-outlined">message</span>
+                            Messages
+                        <div class="arrow-down">
+                            <span class="material-symbols-outlined">arrow_drop_down</span>
+                        </div>
+                        <div class="arrow-up">
+                            <span class="material-symbols-outlined">arrow_drop_up</span>
+                        </div>
+                        </summary>
+                        <div class="toggle-item">
+                            <span class="material-symbols-outlined">mark_email_unread</span>
+                            <a href="#">unread</a>
+                        </div>
+                        <div class="toggle-item">
+                            <span class="material-symbols-outlined">drafts</span>
+                            <a href="#">checked</a>
+                        </div>
+                    </details>
+                </li>
+                <li class="sidebar__nav-item">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <a href="#">cart</a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <span class="material-symbols-outlined">account_balance</span>
+                    <a href="#">bill</a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <span class="material-symbols-outlined">settings</span>
+                    <a href="#">settings</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <ul>
+                <li class="sidebar__nav-item">
+                    <img src="img/dalto.jpg" alt="profile">
+                    <span>profile</span>
+                </li>
+                <li class="sidebar__nav-item">
+                    <span class="material-symbols-outlined">logout</span>
+                    <a href="#">logout</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</body>
+</html>
